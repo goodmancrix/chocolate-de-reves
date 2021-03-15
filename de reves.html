@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="icon" href="./imgs/cocoa.png">
+
+    <title>Chocolat de rêves</title>
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+        body {
+            background-color: rgb(24, 24, 24);
+        }
+
+        #main {
+            width: 100%;
+            padding: 0;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        .bg-dark {
+            background-color: #0c0702c0 !important;
+        }
+
+        .navbar li {
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        .navbar-nav {
+            text-align: center;
+
+        }
+
+        .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        .fa-facebook-f,
+        .fa-instagram,
+        .fa-twitter {
+            color: #ddddd5 !important;
+        }
+
+        .fa-facebook-f:hover,
+        .fa-instagram:hover,
+        .fa-twitter:hover {
+            color: wheat !important;
+        }
+
+        .content-asset p {
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            display: none;
+        }
+
+
+        .mt-10 {
+            padding-top: 10px;
+        }
+
+        .margin-bot-10 {
+            padding-bottom: 10px;
+        }
+
+
+        .Coffee h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: black;
+            padding: 0;
+            margin: 0;
+        }
+
+        .Coffee h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 70px;
+            letter-spacing: 10px;
+            text-align: center;
+            color: #f2f2f2;
+            font-weight: 400;
+            text-transform: uppercase;
+            z-index: 1;
+            opacity: .9;
+        }
+
+
+
+        .Coffee h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            line-height: 0;
+            font-weight: 400;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: #f2f2f2;
+        }
+
+        .Coffee h4 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            line-height: 3;
+            font-weight: 400;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+        .Coffee h5 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            line-height: 3;
+            font-weight: 400;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: #f2f2f2;
+            text-align: center;
+            position: absolute;
+            bottom: 10%;
+            left: 45%;
+        }
+
+        .Coffee p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #f2f2f2;
+        }
+
+        .first-character {
+            font-weight: 400;
+            float: left;
+            font-size: 84px;
+            line-height: 64px;
+            padding-top: 4px;
+            padding-right: 8px;
+            padding-left: 3px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .bg-light {
+            background: #f2f2f2 !important;
+        }
+
+        .sc {
+            color: #7ddbf0;
+        }
+
+        .ny {
+            color: #ff7676;
+        }
+
+        .atw {
+            color: #f1c9b1;
+        }
+
+        .nav-icons {
+            margin-left: auto;
+
+
+        }
+
+        .Coffee .title {
+            background: #f2f2f2;
+            padding: 60px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .Coffee .title h1 {
+            font-size: 35px;
+            letter-spacing: 8px;
+        }
+
+        /* Section - Block */
+        /**************************/
+        .Coffee .block {
+            background: transparent;
+            padding: 60px;
+            width: 820px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        .Coffee .block-gray {
+            background: #f2f2f2;
+            padding: 60px;
+        }
+
+        .Coffee .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.70;
+        }
+
+
+        .Coffee .choco-one {
+            padding-top: 300px;
+            padding-bottom: 300px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background-image: url('./imgs/banner1.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        .Coffee .choco-two {
+            padding-top: 300px;
+            padding-bottom: 300px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background-image: url('./imgs/banner2.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .Coffee .choco-three {
+            padding-top: 300px;
+            padding-bottom: 300px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background-image: url('./imgs/banner3.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .Coffee .line-break {
+            border-bottom: 1px solid #f2f2f2;
+            width: 150px;
+            margin: 0 auto;
+        }
+
+
+        .outer {
+            display: flex;
+
+
+
+            width: 100%;
+            height: 18%;
+        }
+
+        .c2 {
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            max-width: 1900px;
+            max-height: 900px;
+            overflow: hidden;
+            position: relative;
+            margin: 60px;
+            margin-bottom: 0;
+        }
+
+        .c2-item {
+            visibility: visible;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            background-color: rgba(54, 36, 33, 0.226);
+            flex-shrink: 0;
+            position: absolute;
+            z-index: 0;
+            transition: 0.6s all linear;
+        }
+
+        .c2-item__info {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            display: -webkit-flex;
+            -webkit-justify-content: center;
+            -webkit-flex-direction: column;
+
+            order: 1;
+            left: 0;
+            margin: auto;
+            padding: 0 40px;
+            width: 40%;
+
+        }
+
+        .c2-item__image {
+            width: 60%;
+            height: 100%;
+            order: 2;
+            align-self: flex-end;
+            flex-basis: 60%;
+
+            -webkit-order: 2;
+            -webkit-align-self: flex-end;
+            -webkit-flex-basis: 60%;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            transform: translateX(100%);
+            transition: 0.6s all ease-in-out;
+        }
+
+        .c2-item__subtitle {
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 3px;
+            font-size: 10px;
+            text-transform: uppercase;
+            margin: 0;
+            color: #fddddd;
+            font-weight: 700;
+            transform: translateY(25%);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.4s all ease-in-out;
+        }
+
+        .c2-item__title {
+            margin: 15px 0 0 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 44px;
+            line-height: 45px;
+            letter-spacing: 3px;
+            font-weight: 700;
+            color: #fddddd;
+            transform: translateY(25%);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.6s all ease-in-out;
+        }
+
+        .c2-item__description {
+            transform: translateY(25%);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.6s all ease-in-out;
+            margin-top: 35px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 13px;
+            color: #bab5b5;
+            line-height: 22px;
+            margin-bottom: 35px;
+        }
+
+        .c2-item--1 .c2-item__image {
+            background-image: url('./imgs/ieva-kisunaite-aNxlLSec5Dk-unsplash.jpg');
+        }
+
+
+        .c2-item--2 .c2-item__image {
+            background-image: url('./imgs/kyaw-tun-ssG41C6mwrQ-unsplash.jpg');
+        }
+
+        .c2-item--3 .c2-item__image {
+            background-image: url('./imgs/michele-blackwell-evRB-x0TJkM-unsplash.jpg');
+        }
+
+        .c2-item--4 .c2-item__image {
+            background-image: url('./imgs/pushpak-dsilva-r-hQw_obFd0-unsplash.jpg');
+        }
+
+        .c2-item--5 .c2-item__image {
+            background-image: url('./imgs/tetiana-bykovets-H22N-9s8AUw-unsplash.jpg');
+        }
+
+
+
+
+
+
+        .c2-item__btn {
+            width: 35%;
+            color: #c7c5c5;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 3px;
+            font-size: 11px;
+            text-transform: uppercase;
+            margin: 0;
+            width: 35%;
+            font-weight: 700;
+            text-decoration: none;
+            transform: translateY(25%);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.6s all ease-in-out;
+        }
+
+        .c2__nav {
+            position: absolute;
+            right: 0;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.432);
+            bottom: 0;
+        }
+
+        .c2__icon {
+            display: inline-block;
+            vertical-align: middle;
+            width: 16px;
+            fill: #f2f2f2;
+        }
+
+        .c2__arrow {
+            cursor: pointer;
+            display: inline-block;
+            padding: 11px 15px;
+            position: relative;
+        }
+
+        .c2__arrow:nth-child(1):after {
+            content: '';
+            right: -3px;
+            position: absolute;
+            width: 1px;
+            background-color: rgb(24, 24, 24);
+            height: 14px;
+            top: 50%;
+            margin-top: -7px;
+        }
+
+        .active {
+            z-index: 1;
+            display: flex;
+            visibility: visible;
+        }
+
+        .active .c2-item__subtitle,
+        .active .c2-item__title,
+        .active .c2-item__description,
+        .active .c2-item__btn {
+            transform: translateY(0);
+            opacity: 1;
+            transition: 0.6s all ease-in-out;
+            visibility: visible;
+        }
+
+
+
+        .active .c2-item__image {
+            transition: 0.6s all ease-in-out;
+            transform: translateX(0);
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        h5::before {
+            transform: scaleX(0);
+            transform-origin: bottom right;
+        }
+
+        h5:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        h5::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            inset: 0 0 0 0;
+            background: rgba(240, 150, 150, 0.548);
+            z-index: -1;
+            transition: transform .5s ease;
+        }
+
+        h5 {
+            position: relative;
+            font-size: 5rem;
+        }
+
+        .c2 a:hover {
+            color: rgb(92, 19, 19);
+        }
+
+        @media screen and (max-width: 812px) {
+            .Coffee .block {
+                padding: 30px;
+                width: 420px;
+            }
+
+            .Coffee h2 {
+                font-size: 30px;
+            }
+
+            .Coffee .block {
+                padding: 30px;
+            }
+
+            .Coffee .choco-one,
+            .Coffee .choco-two,
+            .Coffee .choco-three {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            .c2 {
+                display: hidden;
+                width: 100vw;
+                height: 110vh;
+                display: flex;
+                max-width: 1900px;
+                max-height: 900px;
+                overflow: hidden;
+
+                margin: 0px;
+            }
+
+            .topbtn {
+                position: fixed;
+                bottom: 2%;
+                left: 50%;
+                z-index: 9;
+                display: hidden;
+            }
+        }
+
+        @media screen and (max-width: 479px) {
+            .Coffee .block {
+                padding: 30px 15px;
+                width: 290px;
+            }
+
+            .c2 {
+                display: hidden;
+                width: 100vw;
+                height: 80vh;
+                display: flex;
+                max-width: 1900px;
+                max-height: 900px;
+                overflow: hidden;
+                position: relative;
+                margin: 0px;
+            }
+
+            .topbtn {
+                position: fixed;
+                bottom: 2%;
+                left: 50%;
+                z-index: 9;
+
+            }
+        }
+
+        @media (orientation: landscape) {
+            body {
+                grid-auto-flow: column;
+            }
+
+        }
+
+        .topbtn {
+            position: fixed;
+            bottom: 2%;
+            left: 95%;
+            z-index: 9;
+        }
+
+        .topbtn button {
+            border: transparent;
+            background-color: rgba(59, 59, 59, 0.589);
+            color: white;
+            outline: none;
+        }
+
+        .outer1 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            margin: auto;
+            text-align: center;
+            z-index: 99999;
+            background-color: rgb(24, 24, 24);
+        }
+
+        .loader {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            border: 4px solid rgb(212, 171, 171);
+            top: 50%;
+            animation: loader 2s infinite ease;
+        }
+
+        .loader-inner {
+            vertical-align: top;
+            display: inline-block;
+            width: 100%;
+            background-color: rgb(212, 171, 171);
+            animation: loader-inner 2s infinite ease-in;
+        }
+
+        .footer {
+            padding: 50px;
+            text-align: center;
+            color: #f8e7b9;
+            background-color: rgba(75, 67, 67, 0.39);
+
+            ;
+        }
+
+        .footer h1 {
+            padding-bottom: 20px;
+        }
+
+        .footer h1,
+        h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(180deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes loader-inner {
+            0% {
+                height: 0%;
+            }
+
+            25% {
+                height: 0%;
+            }
+
+            50% {
+                height: 100%;
+            }
+
+            75% {
+                height: 100%;
+            }
+
+            100% {
+                height: 0%;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="outer1">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="contain">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#">Daily News<span class="sr-only">\</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav nav-icons">
+                    <li class="nav-item">
+                        <i class=" nav-link  fab fa-facebook-f "></i>
+                    </li>
+
+                    <li class="nav-item">
+                        <i class=" nav-link fab fa-instagram"></i>
+
+                    </li>
+                    <li class="nav-item">
+                        <i class=" nav-link fab fa-twitter"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+        <div class="outer">
+
+            <div class="c2">
+                <div class="c2__nav">
+                    <span id="moveLeft" class="c2__arrow">
+                        <svg class="c2__icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                        </svg>
+                    </span>
+                    <span id="moveRight" class="c2__arrow">
+                        <svg class="c2__icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="c2-item c2-item--1">
+                    <div class="c2-item__image"></div>
+                    <div class="c2-item__info">
+                        <div class="c2-item__container">
+                            <h2 class="c2-item__subtitle">The grand moment </h2>
+                            <h1 class="c2-item__title">Le tour</h1>
+                            <p class="c2-item__description">Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <h5><a href="#" class="c2-item__btn">Explore the tour</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="c2-item c2-item--2">
+                    <div class="c2-item__image"></div>
+                    <div class="c2-item__info">
+                        <div class="c2-item__container">
+                            <h2 class="c2-item__subtitle">The best creation </h2>
+                            <h1 class="c2-item__title">Ultimate dessert</h1>
+                            <p class="c2-item__description">Clear Glass Window With Brown and White Wooden Frame
+                                iste
+                                natus error sit voluptatem accusantium doloremque laudantium.</p>
+                            <h5><a href="#" class="c2-item__btn">Read the article</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="c2-item c2-item--3">
+                    <div class="c2-item__image"></div>
+                    <div class="c2-item__info">
+                        <div class="c2-item__container">
+                            <h2 class="c2-item__subtitle">Tropical Scent</h2>
+                            <h1 class="c2-item__title">Raspberry</h1>
+                            <p class="c2-item__description">Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <h5><a href="#" class="c2-item__btn">Explore the palms</a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c2-item c2-item--4">
+                    <div class="c2-item__image"></div>
+                    <div class="c2-item__info">
+                        <div class="c2-item__container">
+                            <h2 class="c2-item__subtitle">Beach </h2>
+                            <h1 class="c2-item__title">The beach </h1>
+                            <p class="c2-item__description">Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <h5><a href="#" class="c2-item__btn">Explore the beach</a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c2-item c2-item--5">
+                    <div class="c2-item__image"></div>
+                    <div class="c2-item__info">
+                        <div class="c2-item__container">
+                            <h2 class="c2-item__subtitle">De 1982 </h2>
+                            <h1 class="c2-item__title">Dark Chocolate</h1>
+                            <p class="c2-item__description">Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <h5><a href="#" class="c2-item__btn">Read the article</a>
+                        </div>
+                        </h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="Coffee">
+
+
+            <section>
+                <div data-bottom-top=" opacity:0; transform:translate(-50%,100%);"
+                    data-center="opacity:1 ; transform:translate(0,0)" class="choco-one">
+                    <h2>Cocoa & ME</h2>
+                    <h4>Quality Cocoa From Around The Globe</h4>
+                    <h4> <a href="">view morea</a></h4>
+                </div>
+            </section>
+
+            <section>
+                <div data-bottom-top=" opacity:0; transform:translate(-100%,0%);"
+                    data-center="opacity:1 ; transform:translate(0,0)" class="block">
+                    <p><span class="first-character sc">I</span>n 1978, Brian Smith landed in Southern California with a
+                        bag
+                        of
+                        sheepskin boots and hope. He fell in love with the sheepskin experience and was convinced the
+                        world
+                        would one day share this love. The beaches of Southern California had long been an epicenter of
+                        a
+                        relaxed, casual lifestyle, a lifestyle that Brian felt was a perfect fit for his brand. So he
+                        founded
+                        the UGG brand, began selling his sheepskin boots and they were an immediate sensation. By the
+                        mid
+                        1980's, the UGG brand became a symbol of relaxed southern California culture, gaining momentum
+                        through
+                        surf shops and other shops up and down the coast of California, from San Diego to Santa Cruz.
+                        UGG
+                        boots
+                        reached beyond the beach, popping up in big cities and small towns all over, and in every level
+                        of
+                        society. Girls wore their surfer boyfriend's pair of UGG boots like a letterman jacket. When
+                        winter
+                        came
+                        along, UGG boots were in ski shops and were seen in lodges from Mammoth to Aspen.</p>
+                    <p class="line-break mt-10"></p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <div data-bottom-top=" opacity:0; transform:translate(-100%,0%);"
+                    data-center="opacity:1; transform:translate(0,0)"" class=" block">
+                    <p>The UGG brand began to symbolize those who embraced sport and a relaxed, active
+                        lifestyle. More than that, an emotional connection and a true feeling of love began to grow for
+                        UGG
+                        boots, just as Brian had envisioned. People didn't just like wearing UGG boots, they fell in
+                        love
+                        with
+                        them and literally could not take them off. By the end of the 90's, celebrities and those in the
+                        fashion
+                        world took notice of the UGG brand. A cultural shift occurred as well - people were embracing,
+                        and
+                        feeling empowered, by living a more casual lifestyle and UGG became one of the symbols of this
+                        lifestyle. By 2000, a love that began on the beaches had become an icon of casual style. It was
+                        at
+                        this
+                        time that the love for UGG grew in the east, over the Rockies and in Chicago. In 2000, UGG
+                        Sheepskin
+                        boots were first featured on Oprah's Favorite Things® and Oprah emphatically declared that she
+                        "LOOOOOVES her UGG boots." From that point on, the world began to notice.</p>
+                </div>
+            </section>
+
+            <section>
+                <div data-bottom-top=" opacity:0;" data-center="opacity:1 ;" class="choco-two">
+                    <h2>Beans and the Globe</h2>
+                    <h4>FOR THE SWEETEST MOMENT IN LIFE</h4>
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <section>
+                <div data-bottom-top=" opacity:0; transform:translate(-50%,0%);"
+                    data-center="opacity:1; transform:translate(0,0)" class=" block">
+                    <p><span class="first-character ny">B</span>reaking into the New York fashion world is no easy task.
+                        But
+                        by
+                        the early 2000's, UGG Australia began to take it by storm. The evolution of UGG from a brand
+                        that
+                        made
+                        sheepskin boots, slippers, clogs and sandals for an active, outdoor lifestyle to a brand that
+                        was
+                        now
+                        being touted as a symbol of a stylish, casual and luxurious lifestyle was swift. Much of this
+                        was
+                        due to
+                        a brand repositioning effort that transformed UGG into a high-end luxury footwear maker. As a
+                        fashion
+                        brand, UGG advertisements now graced the pages of Vogue Magazine as well as other fashion books.
+                        In
+                        the
+                        mid 2000's, the desire for premium casual fashion was popping up all over the world and UGG was
+                        now
+                        perfectly aligned with this movement.</p>
+                    <p class="line-break mt-10"></p>
+                    <p class="mt-10">Fueled by celebrities from coast to coast wearing UGG boots and slippers on
+                        their
+                        downtime, an entirely new era of fashion was carved out. As a result, the desire and love for
+                        UGG
+                        increased as people wanted to go deeper into this relaxed UGG experience. UGG began offering
+                        numerous
+                        color and style variations on their sheepskin boots and slippers. Cold weather boots for women
+                        and
+                        men
+                        and leather casuals were added with great success. What started as a niche item, UGG sheepskin
+                        boots
+                        were now a must-have staple in everyone's wardrobe. More UGG collections followed, showcasing
+                        everything
+                        from knit boots to sneakers to wedges, all the while maintaining that luxurious feel UGG is
+                        known
+                        for
+                        all over the world. UGG products were now seen on runways and in fashion shoots from coast to
+                        coast.
+                        Before long, the love spread even further.</p>
+                </div>
+            </section>
+
+
+
+
+
+        </div>
+
+
+
+
+        <div class="Coffee">
+            <section>
+                <div class="choco-three">
+                    <h2>Catering & Event</h2>
+                    <h4>FOR THE SWEETEST MOMENT IN LIFE</h4>
+                </div>
+            </section>
+
+            <section>
+                <div data-bottom-top=" opacity:0; transform:translate(0%,-100%); "
+                    data-center="opacity:1 ; transform:translate(0%,0%);" class="block">
+                    <p><span class="first-character atw">W</span>hen the New York fashion community notices your brand,
+                        the
+                        world soon follows. The widespread love for UGG extended to Europe in the mid-2000's along with
+                        the
+                        stylish casual movement and demand for premium casual fashion. UGG boots and shoes were now seen
+                        walking
+                        the streets of London, Paris and Amsterdam with regularity. To meet the rising demand from new
+                        fans,
+                        UGG
+                        opened flagship stores in the UK and an additional location in Moscow. As the love spread
+                        farther
+                        East,
+                        concept stores were opened in Beijing, Shanghai and Tokyo. UGG Australia is now an international
+                        brand
+                        that is loved by all. This love is a result of a magical combination of the amazing functional
+                        benefits
+                        of sheepskin and the heightened emotional feeling you get when you slip them on your feet. In
+                        short,
+                        you
+                        just feel better all over when you wear UGG boots, slippers, and shoes.</p>
+                    <p class="line-break mt-10"></p>
+                    <p class="mt-10">In 2011, UGG will go back to its roots and focus on bringing the active men
+                        that
+                        brought the brand to life back with new styles allowing them to love the brand again as well.
+                        Partnering
+                        with Super Bowl champion and NFL MVP Tom Brady, UGG will invite even more men to feel the love
+                        the
+                        rest
+                        of the world knows so well. UGG will also step into the world of high fashion with UGG
+                        Collection.
+                        The
+                        UGG Collection fuses the timeless craft of Italian shoemaking with the reliable magic of
+                        sheepskin,
+                        bringing the luxurious feel of UGG to high end fashion. As the love for UGG continues to spread
+                        across
+                        the world, we have continued to offer new and unexpected ways to experience the brand. The UGG
+                        journey
+                        continues on and the love for UGG continues to spread.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer">
+            <div class="cu">
+                <h1>Contact Us</h1>
+
+                <h2>Phone</h2>
+                <p>+(886)978-645-213</p>
+                <h2>Mail</h2>
+                <p>cocoa@mail.com</p>
+                <h2>Address</h2>
+                <p>456 TN Faking street <br>NY. New York</p>
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="topbtn"><button onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Top</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./skrollr-master/src/skrollr.js"> </script>
+
+    <script>
+        var s = skrollr.init();
+        if ($(window).width() <= 400) {
+            skrollr.init().destroy();
+        }
+
+        // $('.choco-one a')
+        //     .mouseenter(function () {
+        //         $('.choco-one').css('opacity', '0.8');
+        //     }).mouseleave(function () {
+        //         $('.choco-one').css('opacity', '1');
+        //     });
+
+        $('.choco-one a')
+            .mouseenter(function () {
+                $('.choco-one a').css('color', 'black');
+            }).mouseleave(function () {
+                $('.choco-one a').css('color', 'white');
+            });
+
+
+        $(function () {
+            $('.c2-item').eq(0).addClass('active');
+            var total = $('.c2-item').length;
+            var current = 0;
+            $('#moveRight').on('click', function () {
+                var next = current;
+                current = current + 1;
+                setSlide(next, current);
+            });
+            $('#moveLeft').on('click', function () {
+                var prev = current;
+                current = current - 1;
+                setSlide(prev, current);
+            });
+            function setSlide(prev, next) {
+                var slide = current;
+                if (next > total - 1) {
+                    slide = 0;
+                    current = 0;
+                }
+                if (next < 0) {
+                    slide = total - 1;
+                    current = total - 1;
+                }
+                $('.c2-item').eq(prev).removeClass('active');
+                $('.c2-item').eq(slide).addClass('active');
+                setTimeout(function () {
+
+                }, 800);
+
+
+
+                console.log('current ' + current);
+                console.log('prev ' + prev);
+            }
+        });
+
+
+        if ($(window).height() <= 812) {
+            skrollr.init().destroy();
+        }
+
+        $('.outer1').fadeOut(3000, function () { $(this).remove(); });
+
+
+
+        // $('body').addClass('.outer1').one('animationend', function () {
+        //     $(this).remove('outer1');
+        // });
+
+    </script>
+</body>
+
+</html>
